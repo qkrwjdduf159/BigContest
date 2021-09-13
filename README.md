@@ -12,3 +12,7 @@
 ## 2. 모델링
 1. Voting을 이용해서 1차 예측을 진행
 2. moving average 예측한 target값과 train의 target값으로 moving average columnn을 만들어 주고 다시 Voting regressor로 다시 예측을 진행했습니다.
+
+## 고민인 점##
+1. average mean을 해본 결과 5로 했을 때 가장 잘나왔다. 그러나 그 부분을 증명할 방법이 없다고 판단된다.
+2. 4개의 데이터를 뺀 부분도 감점 요소가 될 수 있다고 판단한다 이 부분은 강사님과 상의를 통해서 진행을 하는 것이 좋읗 것 같다.
