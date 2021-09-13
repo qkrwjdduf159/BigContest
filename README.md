@@ -10,5 +10,5 @@
 6. target을 voting방법을 예측을 한 이후에 target의 moving average를 구해서 데이터를 다시 생성해주고 변수로 넣어준다.
 
 ## 2. 모델링
-1. 단일모델, stacking, voting을 사용한 결과 RandomForestRegressor가 가장 잘 맞았다.
-2. GridSearchCV를 사용해서 파라미터 최적화를 시행해 주었습니다.
+1. Voting을 이용해서 1차 예측을 진행
+2. moving average 예측한 target값과 train의 target값으로 moving average columnn을 만들어 주고 다시 Voting regressor로 다시 예측을 진행했습니다.
